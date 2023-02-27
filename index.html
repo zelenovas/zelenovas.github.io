@@ -6,7 +6,7 @@
         console.error(errMsg);
 
         let helpMsg = 'Не указан (или указан неверно) номер телефона для звонка!\n\nПример правильной ссылки:';
-        let linkExample = window.location.href + '?phone=89051234567';
+        let linkExample = location.protocol + '//' + location.host + location.pathname + '?phone=89051234567';
         prompt(helpMsg, linkExample);
 
         window.close();
